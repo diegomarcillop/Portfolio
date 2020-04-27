@@ -1,0 +1,28 @@
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-top: 14.6vh;
+    text-justify: center;
+}
+
+
+ .social-media ul li {
+     width: 3vh;
+     height: 3vh;
+     list-style: none;
+     cursor: pointer;
+     font-size: 2.6vh;
+     background-color: rgb(111, 133, 241);
+     border-radius: 100%;
+     color: white;
+    margin-left: 8px;
+     padding:8px;
+     transition: all .8s;
+ }
+
+ .social-media ul li:hover {
+    background-color: rgb(87, 104, 189);
+
+ }

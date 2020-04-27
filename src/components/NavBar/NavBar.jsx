@@ -1,4 +1,5 @@
 import React, { createRef } from "react";
+import Social from '../Social/Social';
 import "./NavBar.css";
 
 function NavBar() {
@@ -25,7 +26,7 @@ function NavBar() {
                 alt="profile"
                 className="img-profile"
                 style={{
-                  width: "30vh",
+                  width: "24vh",
                 }}
               />
               <h1>Diego Marcillo</h1>
@@ -57,6 +58,7 @@ function NavBar() {
               </a>
             </li>
           </ul>
+            <Social/>
         </nav>
       </div>
     </>
