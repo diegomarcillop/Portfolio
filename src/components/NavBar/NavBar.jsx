@@ -11,7 +11,7 @@ function NavBar() {
 
   return (
     <>
-      <div className="container">
+       
         <nav className="navbar" ref={navbar}>
           <div className="hamburger-menu" onClick={onClick}>
             <div className="line line-1"></div>
@@ -38,17 +38,24 @@ function NavBar() {
                 <span>Home</span>
                 <i className="fas fa-home"></i>
               </a>
-            </li>
+            </li> 
             <li className="nav-item">
               <a href="/" className="nav-link">
-                <span>About Me</span>
-                <i className="far fa-address-card"></i>
+                <span>Skills</span>
+                <i className="fas fa-brain"></i>
               </a>
             </li>
             <li className="nav-item">
               <a href="/" className="nav-link">
                 <span>Portfolio</span>
                 <i className="fas fa-code"></i>
+              </a>
+            </li>
+            
+            <li className="nav-item">
+              <a href="/" className="nav-link">
+                <span>About Me</span>
+                <i className="far fa-address-card"></i>
               </a>
             </li>
             <li className="nav-item">
@@ -59,8 +66,7 @@ function NavBar() {
             </li>
           </ul>
             <Social/>
-        </nav>
-      </div>
+        </nav> 
     </>
   );
 }

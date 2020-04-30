@@ -6,7 +6,7 @@
 .container { 
     height: 100vh; 
     background-size: cover;  
-    z-index: 1000;
+    z-index: 0;
 }
 
 .hamburger-menu {
@@ -26,8 +26,7 @@
     width: 34vh;
     height: 100%;
     background-color:#1A2947; 
-    position: fixed;
-    overflow-x: hidden;
+    position: fixed;  
     top: 0;
     left: -350px;
     display: flex; 
