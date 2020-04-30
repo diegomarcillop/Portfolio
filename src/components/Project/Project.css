@@ -1,0 +1,13 @@
+.project {
+    margin: 2vh;
+    height: 38vh; 
+    -webkit-box-shadow: -2px 2px 15px 6px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: -2px 2px 15px 6px rgba(0, 0, 0, 0.26);
+    box-shadow: -2px 2px 15px 6px rgba(0, 0, 0, 0.26);
+ 
+}
+
+.project img {
+    height: 28vh; 
+    z-index: 1;
+}
