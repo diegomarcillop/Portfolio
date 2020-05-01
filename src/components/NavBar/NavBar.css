@@ -33,6 +33,7 @@
     flex-direction: column; 
     transition: left .8s cubic-bezier(1, 0, 0, 1); 
     padding:14px;
+    z-index: 1000;
 }
 
 @media only screen and (max-width: 1000vh) {
@@ -52,6 +53,7 @@
         left: -40vh;
         border-radius: 0 20% 20% 0;
     }
+    
 }
 
 .change {

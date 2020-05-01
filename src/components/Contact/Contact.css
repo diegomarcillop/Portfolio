@@ -1,13 +1,14 @@
  
  
-
 .form-group{   
     width: 100%;
-    display: flex;
-    margin:  100px;
+    height: 100vh;
+    display: flex; 
     flex-direction: column;  
-    z-index: 1; 
+    z-index: 0; 
     text-align: center;
+    position: relative;
+    background-color: rgb(214, 218, 247);
 }
  
 
