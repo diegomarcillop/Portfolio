@@ -7,7 +7,7 @@
     flex-direction: row; 
     width: 100%;
     height: 100vh; 
-    margin: 0px 6vh 0px 26vh;
+    margin: 0px 10vh 0px 14vh;
 }
 
 .skills-1 {
@@ -19,14 +19,14 @@
 .progress{   
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    height: 26px;
+    height: 13px;
     width: 56vh; 
     box-shadow: -2px 2px 15px 6px rgba(61, 61, 61, 0.26);
 }
 
 @media only screen and (max-width: 900px) {
     .progress {
-     width: 44vh;
+     width: 38vh;
     } 
 
     .skills{
@@ -47,5 +47,6 @@
     margin-left: -1px;
     padding-bottom: 8px;
     font-family: 'Lato', sans-serif;
+    color: rgb(18, 22, 34);
     font-size: 2.4vh; 
 }
