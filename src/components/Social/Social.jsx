@@ -7,15 +7,21 @@ function Social() {
       <div className="social-media">
         <ul className="social-media">
           <li>
-            <i className="fab fa-linkedin-in"></i>
+           <a target="_black" href="https://www.linkedin.com/in/diegomarcillop/">
+           <i className="fab fa-linkedin-in"/>
+           </a>
           </li>
 
           <li>
-            <i className="fab fa-github"></i>
+          <a target="_black" href="https://github.com/diegomarcillop">
+            <i className="fab fa-github"/>
+            </a>
           </li>
 
           <li>
-            <i className="fab fa-behance"></i>
+          <a target="_black" href="https://www.behance.net/dfmarcillopinzon">
+            <i className="fab fa-behance"/>
+            </a>
           </li>
         </ul>
       </div>
