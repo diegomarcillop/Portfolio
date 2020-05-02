@@ -1,6 +1,6 @@
-body, html { 
+  html { 
     background-color: rgb(249, 244, 253);
-    overflow-x: hidden; 
+    overflow-x: hidden;  
 }
 
 .profile { 
@@ -8,7 +8,8 @@ body, html {
     flex-direction: column; 
     align-items: center; 
     margin-left: 250px;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat; 
+    scroll-behavior: smooth;
     
 }
 
@@ -35,3 +36,4 @@ h2{
     margin: 10px;
     color: rgb(69, 60, 88);
 }
+ 
