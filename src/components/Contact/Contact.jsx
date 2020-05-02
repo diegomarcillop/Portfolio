@@ -1,9 +1,16 @@
 import React from "react";
 import "./Contact.css";
 function Contact() {
+
+  const element = React.createRef();
+  
+  const action = () => {
+    console.log("SI SEÑOR");
+  }
+
   return (
     <> 
-        <div className="form-group">
+        <div className="form-group" id="contact"   >
           <h2 className="title">Contact me</h2>
           <div className="form">
             <input

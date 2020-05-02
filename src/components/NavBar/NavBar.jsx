@@ -40,26 +40,26 @@ function NavBar() {
               </a>
             </li> 
             <li className="nav-item">
-              <a href="/" className="nav-link">
+              <a href="#skills" className="nav-link">
                 <span>Skills</span>
                 <i className="fas fa-brain"></i>
               </a>
             </li>
             <li className="nav-item">
-              <a href="/" className="nav-link">
+              <a href="#portfolio" className="nav-link">
                 <span>Portfolio</span>
                 <i className="fas fa-code"></i>
               </a>
             </li>
             
             <li className="nav-item">
-              <a href="/" className="nav-link">
+              <a href="#about" className="nav-link">
                 <span>About Me</span>
                 <i className="far fa-address-card"></i>
               </a>
             </li>
             <li className="nav-item">
-              <a href="/" className="nav-link">
+              <a href="#contact" className="nav-link">
                 <span>Contact</span>
                 <i className="far fa-envelope-open"></i>
               </a>

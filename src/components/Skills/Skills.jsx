@@ -4,7 +4,7 @@ import Skill from "./Skill";
 function Skills() {
   return (
     <>
-      <div className="skills">
+      <div className="skills" id="skills">
         <div className="skills-1">
           <Skill title="HTML" progress="80" />
           <Skill title="JavaScript" progress="80" />

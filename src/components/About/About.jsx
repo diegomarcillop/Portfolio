@@ -4,8 +4,8 @@ import "./About.css";
 function About() {
   return (
     <>
-    <div className="parallax">
-      <div className="about">
+    <div className="parallax" id="about">
+      <div className="about ">
         
         <div className="content-about">
           <div className="title">

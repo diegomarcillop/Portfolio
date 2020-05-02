@@ -5,17 +5,21 @@ import "./Portfolio.css";
 function Portfolio() {
   return (
     <>
-      <div className="portfolio">
+      <div className="portfolio" id="portfolio">
         <h2>Portfolio</h2>
-        <br/>
+        <br />
         <div className="projects">
           <Project url="/View.png" />
           <Project url="/View.png" />
           <Project url="/View.png" />
           <Project url="/imageS.jpg" />
+          <Project url="/imageS.jpg" />
+          <Project url="/imageS.jpg" />
+          <Project url="/imageS.jpg" />
+          <Project url="/imageS.jpg" /> 
         </div>
-        <br/>
-        <br/>
+        <br />
+        <br />
       </div>
     </>
   );
