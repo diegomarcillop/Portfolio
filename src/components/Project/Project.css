@@ -1,13 +1,43 @@
 .project {
-    margin: 2vh;
-    height: 38vh; 
-    -webkit-box-shadow: -2px 2px 15px 6px rgba(0, 0, 0, 0.26);
-    -moz-box-shadow: -2px 2px 15px 6px rgba(0, 0, 0, 0.26);
-    box-shadow: -2px 2px 15px 6px rgba(0, 0, 0, 0.26);
- 
+    position: relative;
+    width: 40vh;
+    height: auto;
+    display: flex; 
+    margin: 14px;
+    cursor: pointer; 
+    background-color: rgb(29, 36, 80);
+    box-shadow: -2px 2px 15px 6px rgba(109, 109, 109, 0.26);
+
 }
 
-.project img {
-    height: 28vh; 
-    z-index: 1;
+.project .title-project{
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700;
+    padding: 6px;
+    font-size: 2.8vh;
+    color: white;   
 }
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;  
+  }
+   
+  .overlay { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .8s ease;
+    background-color: rgba(24, 25, 109, 0.877);
+  }
+  
+  .project:hover .overlay {
+    opacity: 1;
+  }
+ 

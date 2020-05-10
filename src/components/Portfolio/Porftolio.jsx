@@ -9,14 +9,9 @@ function Portfolio() {
         <h2>Portfolio</h2>
         <br />
         <div className="projects">
-          <Project url="/View.png" />
-          <Project url="/View.png" />
-          <Project url="/View.png" />
-          <Project url="/imageS.jpg" />
-          <Project url="/imageS.jpg" />
-          <Project url="/imageS.jpg" />
-          <Project url="/imageS.jpg" />
-          <Project url="/imageS.jpg" /> 
+          <Project url="/cat-view.png" title="'Know your cat'" />
+          <Project url="/duvo2.png" title="'Duvo'" />
+           <Project url="/imageS.jpg" /> 
         </div>
         <br />
         <br />
