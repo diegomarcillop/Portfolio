@@ -1,0 +1,14 @@
+.btn_scrolling{
+    background: linear-gradient(to right, #455a70, #6971ad); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    border-radius: 100%;
+    width: 10vh;
+    height: 10vh;
+    color: white;
+    font-size: 8vh;
+    position: fixed;
+    right: 2vh;
+    bottom: 10vh;
+    outline: 0;
+    cursor: pointer;
+}
