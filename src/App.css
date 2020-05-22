@@ -29,6 +29,12 @@ h1{
     .group-skills {
         flex-wrap: wrap;
     } 
+    .form{
+        flex-wrap: wrap;
+    }
+    .form input{
+        margin-right: 0;
+    }
 }
 
 h2 {
