@@ -28,10 +28,7 @@ h1{
     }
     .group-skills {
         flex-wrap: wrap;
-    }
-    .skills {
-        height: auto!important;
-    }
+    } 
 }
 
 h2 {

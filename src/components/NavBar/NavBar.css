@@ -23,9 +23,9 @@
 
 .navbar {
     font-family: 'Lato', sans-serif;
-    width: 34vh;
+    width: 35vh;
     height: 100%;
-    background-color:#1A2947; 
+    background-color:#161a27; 
     position: fixed;  
     top: 0;
     left: -350px;
@@ -108,7 +108,7 @@
 }
  
 .nav-item:hover {
-    background-color: #32537F;
+    background-color:#313957; 
 }
   
 

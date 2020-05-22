@@ -7,7 +7,7 @@
     align-items: center;
     flex-wrap: nowrap;
     flex-direction:  column;  
-    background-color: rgba(219, 228, 236, 0.363);
+    background: linear-gradient(to right, #e5edfc, #dceafd);
     text-align: center; 
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);   
 }

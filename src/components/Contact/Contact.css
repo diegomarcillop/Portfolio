@@ -9,7 +9,7 @@
     flex-direction: column;  
     z-index: 0; 
     text-align: center; 
-    background-color: rgb(235, 238, 243);
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
 }
 
 .form-group{
