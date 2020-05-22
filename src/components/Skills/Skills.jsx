@@ -5,6 +5,8 @@ function Skills() {
   return (
     <>
       <div className="skills" id="skills">
+        <h1>Skills</h1>
+        <div className="group-skills">
         <div className="skills-1">
           <Skill title="HTML" progress="80" />
           <Skill title="JavaScript" progress="80" />
@@ -16,6 +18,7 @@ function Skills() {
           <Skill title="NestJS" progress="40" />
           <Skill title="ReactJS" progress="70" />
           <Skill title="Vue" progress="5" />
+        </div>
         </div>
       </div>
     </>

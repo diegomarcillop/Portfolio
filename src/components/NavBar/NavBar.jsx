@@ -4,69 +4,73 @@ import "./NavBar.css";
 
 function NavBar() {
   const navbar = createRef();
+  const menu = [
+    "home"
+    , "skills"
+    , "portfolio"
+    , "about"
+    , "contact",
+  ];
 
   const onClick = () => {
     navbar.current.classList.toggle("change");
   };
 
+  const menuAction = async (evt) => {
+    let page = await menu[evt.target.id];
+    page = page !== undefined ? page : "home";
+    document.getElementById(page).scrollIntoView({ behavior: 'smooth' });
+    onClick();
+  }
+
   return (
     <>
-       
-        <nav className="navbar" ref={navbar}>
-          <div className="hamburger-menu" onClick={onClick}>
-            <div className="line line-1"></div>
-            <div className="line line-2"></div>
-            <div className="line line-3"></div>
+      <nav className="navbar" ref={navbar}>
+        <div className="hamburger-menu" onClick={onClick}>
+          <div className="line line-1"></div>
+          <div className="line line-2"></div>
+          <div className="line line-3"></div>
+        </div>
+
+        <ul className="nav-list">
+          <div className="img-content">
+            <img
+              src="img/profile_2.jpg"
+              alt="profile"
+              className="img-profile"
+              style={{
+                width: "24vh",
+                height: "24vh"
+              }}
+            />
+            <h1>Diego Marcillo</h1>
+            <p>Software developer</p>
           </div>
 
-          <ul className="nav-list">
-            <div className="img-content">
-              <img
-                src="/profile.jpg"
-                alt="profile"
-                className="img-profile"
-                style={{
-                  width: "24vh",
-                }}
-              />
-              <h1>Diego Marcillo</h1>
-              <p>Software developer</p>
-            </div>
+          <li className="nav-item" id="0" onClick={menuAction}>
+            <span>Home</span>
+            <i className="fas fa-home"></i>
+          </li>
+          <li className="nav-item" id="1" onClick={menuAction} >
+            <span>Skills</span>
+            <i className="fas fa-brain"></i>
+          </li>
+          <li className="nav-item" id="2" onClick={menuAction}>
+            <span>Portfolio</span>
+            <i className="fas fa-code"></i>
+          </li>
 
-            <li className="nav-item">
-              <a href="/" className="nav-link">
-                <span>Home</span>
-                <i className="fas fa-home"></i>
-              </a>
-            </li> 
-            <li className="nav-item">
-              <a href="#skills" className="nav-link">
-                <span>Skills</span>
-                <i className="fas fa-brain"></i>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#portfolio" className="nav-link">
-                <span>Portfolio</span>
-                <i className="fas fa-code"></i>
-              </a>
-            </li>
-            
-            <li className="nav-item">
-              <a href="#about" className="nav-link">
-                <span>About Me</span>
-                <i className="far fa-address-card"></i>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#contact" className="nav-link">
-                <span>Contact</span>
-                <i className="far fa-envelope-open"></i>
-              </a>
-            </li>
-          </ul>
-            <Social/>
-        </nav> 
+          <li className="nav-item" id="3" onClick={menuAction}>
+            <span>About Me</span>
+            <i className="far fa-address-card"></i>
+          </li>
+          <li className="nav-item" id="4" onClick={menuAction} >
+            <span>Contact</span>
+            <i className="far fa-envelope-open"></i>
+          </li>
+        </ul>
+        <Social />
+      </nav>
     </>
   );
 }

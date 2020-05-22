@@ -11,6 +11,7 @@
 .social-media a {
     text-decoration: none;
     color: #1A2947;
+    transition: all .8s ease;
 }
 
 .social-media ul li {
@@ -27,6 +28,7 @@
 }
 
 .social-media ul li:hover {
-    background-color: #406995;
-    color: white;
+    background-color: #8ba9c9; 
 }
+
+ 

@@ -90,11 +90,10 @@
 .nav-item {
     list-style: none;
     margin: 10px;
-}
-
-.nav-link {
     text-decoration: none;
     color: white;
+    display: flex;
+    justify-content: space-between;
     font-size: 2.2vh;
     font-weight: 600;
     letter-spacing: 0px;
@@ -105,20 +104,13 @@
     border-radius: 2px 2px 2px 2px;
     padding: 6px;
     transition: all .4s;
+    cursor: pointer;
 }
-
-.nav-link:hover {
+ 
+.nav-item:hover {
     background-color: #32537F;
 }
-
-.nav-link span {
-    width: 26vh;
-}
-
-.nav-link i {
-    align-self: flex-end;
-    font-size: 2.2vh;
-}
+  
 
 .img-content {
     display: flex;
@@ -127,6 +119,14 @@
     align-items: center;
     word-spacing: 4px;
     border-bottom: 1px solid #D5CABD;
+}
+
+@supports (object-fit: cover) {
+    .img-content img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
 }
 
 .img-content h1 {

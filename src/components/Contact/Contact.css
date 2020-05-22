@@ -1,6 +1,6 @@
  
  
-.form-group{   
+.content_contact{
     width: 100%;
     height: 100vh;
     display: flex; 
@@ -9,69 +9,74 @@
     flex-direction: column;  
     z-index: 0; 
     text-align: center; 
-    background-color: rgb(214, 218, 247);
+    background-color: rgb(235, 238, 243);
 }
- 
 
+.form-group{
+    width: 50%;
+}
+
+.form-group h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    margin-bottom: 1vh;
+    font-size: 4.5vh; 
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    width: 100%;
+}
+
+.form input:last-of-type {
+    margin-right: 0;
+}
+
+.form-group p{
+    font-family: 'Raleway', sans-serif;
+
+    font-size: 2.5vh; 
+    color: rgb(114, 114, 114);
+    font-weight: 300;  
+    margin-bottom: 2vh;
+}
 .form input{
     margin-top: 10px;
-   font-family: 'Lato', sans-serif;
-   font-weight: 400;
-   font-size: 2.2vh; 
-   padding:4px;
-   width: 56vh;
-    height: 3.6vh;  
-    padding-left: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.2vh;  
+    margin-right: 2vh;
+   width: 100%;
+    height: 2vh;  
+    padding: 2vh;
     border: 1px solid rgba(168, 179, 202, 0.89); 
     outline: none;
 }
 
 
 .form-area{  
+    display:flex;
     padding-top: 16px; 
+    flex-wrap: wrap;
 }
 
 .form-area textarea{  
     outline: none; 
     border: 1px solid rgba(168, 179, 202, 0.89); 
-    font-family: 'Lato', sans-serif;
-    font-weight: 400; 
+    font-family: 'Raleway', sans-serif;
     font-size: 2.2vh;
-    width: 56vh;
-    padding: 4px; 
+    padding: 2vh;
+    width: 95%; 
     height: 30.6vh;   
 }
 
-
-@media only screen and (max-width: 900px) {
-    .form input {
-     width: 39vh;
-     height: 3vh;
-    } 
-    .form-area textarea{
-        width: 39vh;
-        height: 26vh;
-    }
  
-}
  
 .form-action {
     margin-top: 20px;
 }
 
-.form-action button {
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    width: 20vh;
-    height: 4.4vh;
-    border-radius: 60px 0px 60px 0px;
-    border: none;
-    outline: none;
-    font-size: 2.5vh;
-    background-color: #2F3876;
-    color: white;
-}
-
-.form-action button:hover {
-    background-color: #241F52;
-}
+ 
+ 

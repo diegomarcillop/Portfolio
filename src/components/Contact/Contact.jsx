@@ -1,44 +1,36 @@
 import React from "react";
 import "./Contact.css";
 function Contact() {
+ 
 
-  const element = React.createRef();
-  
-  const action = () => {
-    console.log("SI SEÑOR");
-  }
-
-  return (
-    <> 
-        <div className="form-group" id="contact"   >
-          <h2 className="title">Contact me</h2>
+  return ( 
+        <div className="content_contact">
+          <div className="form-group" id="contact"   >
+          <h1 >Contact me</h1>
+          <p>Contact me by sending a message and let's work together on great ideas!</p>
           <div className="form">
             <input
-              type="text"
-              autoComplete="off"
+              type="text" 
               name="name"
               required
               placeholder="Name"
             />
-          </div>
-          <div className="form">
-            <input
-              type="email"
-              autoComplete="off"
+             <input
+              type="email" 
               name="name"
               required
               placeholder="Email"
             />
-          </div>
+          </div> 
 
           <div className="form-area">
-            <textarea rows="10" cols="50" placeholder="Message" />
+            <textarea type="text" rows="10" cols="50" placeholder="Message" />
           </div>
           <div className="form-action">
-          <button>Send</button>
+          <button className="btn_know_more">Send</button>
         </div>
-        </div> 
-    </>
+        </div>  
+        </div>
   );
 }
 export default Contact;

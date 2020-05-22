@@ -4,7 +4,7 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
+    margin: 3vh; 
     height: 98vh; 
 }
 
@@ -18,26 +18,28 @@
     flex-direction: column;
     text-align: right;
     width: 60vh;
-    background-color: rgb(142, 166, 214);
+    background-color: rgb(50, 65, 112);
+    color: white;
 }
 
 .about .content-about .title h2 {
     margin: 16px 16px 0px 0px;
     letter-spacing: 1px;
+    font-weight: 900;
     font-family: 'Lato', sans-serif;
-    color: rgb(41, 40, 40);
+    color: white;
 }
 
 .about .content-about .description {
     font-family: 'Raleway', sans-serif;
-
     margin: 0 30px 30px 30px;
-    font-size: 2.8vh;
+    font-size: 2.4vh;
+    line-height: 1.5em;
     text-align: right;
 }
 
 .parallax {
-    background-image: url('/parallax.png');
+    background-image: url('/img/parallax.png');
     width: 100%;
     min-height: 500px;
     /* Create the parallax scrolling effect */
