@@ -1,16 +1,11 @@
 import React, { createRef } from "react";
-import Social from '../Social/Social';
+import Social from "../Social/Social";
 import "./NavBar.css";
+import Profile from "../Profile/Profile";
 
 function NavBar() {
   const navbar = createRef();
-  const menu = [
-    "home"
-    , "skills"
-    , "portfolio"
-    , "about"
-    , "contact",
-  ];
+  const menu = ["home", "skills", "portfolio", "about", "contact"];
 
   const onClick = () => {
     navbar.current.classList.toggle("change");
@@ -19,59 +14,51 @@ function NavBar() {
   const menuAction = async (evt) => {
     let page = await menu[evt.target.id];
     page = page !== undefined ? page : "home";
-    document.getElementById(page).scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(page).scrollIntoView({ behavior: "smooth" });
     onClick();
-  }
+  };
 
   return (
-    <>
-      <nav className="navbar" ref={navbar}>
-        <div className="hamburger-menu" onClick={onClick}>
-          <div className="line line-1"></div>
-          <div className="line line-2"></div>
-          <div className="line line-3"></div>
-        </div>
+    <nav className="navbar" ref={navbar}>
+      <div className="hamburger-menu" onClick={onClick}>
+        <div className="line line-1"></div>
+        <div className="line line-2"></div>
+        <div className="line line-3"></div>
+      </div>
+      <ul className="nav-list">
+        <li className="nav-item" id="0" onClick={menuAction}>
+          <a href="/">
+          <i className="fas fa-home"></i>
+            <span> Home</span>
+           </a>
+        </li>
+        <li className="nav-item" id="1" onClick={menuAction}>
+          <a href="/">
+          <i className="fas fa-brain"></i>
+            <span> Skills</span>
+           </a>
+        </li>
+        <li className="nav-item" id="2" onClick={menuAction}>
+          <a href="/">
+          <i className="fas fa-code"></i>
+            <span> Portfolio</span>
+           </a>
+        </li>
 
-        <ul className="nav-list">
-          <div className="img-content">
-            <img
-              src="img/profile_2.jpg"
-              alt="profile"
-              className="img-profile"
-              style={{
-                width: "24vh",
-                height: "24vh"
-              }}
-            />
-            <h1>Diego Marcillo</h1>
-            <p>Software developer</p>
-          </div>
-
-          <li className="nav-item" id="0" onClick={menuAction}>
-            <span>Home</span>
-            <i className="fas fa-home"></i>
-          </li>
-          <li className="nav-item" id="1" onClick={menuAction} >
-            <span>Skills</span>
-            <i className="fas fa-brain"></i>
-          </li>
-          <li className="nav-item" id="2" onClick={menuAction}>
-            <span>Portfolio</span>
-            <i className="fas fa-code"></i>
-          </li>
-
-          <li className="nav-item" id="3" onClick={menuAction}>
-            <span>About Me</span>
-            <i className="far fa-address-card"></i>
-          </li>
-          <li className="nav-item" id="4" onClick={menuAction} >
-            <span>Contact</span>
-            <i className="far fa-envelope-open"></i>
-          </li>
-        </ul>
-        <Social />
-      </nav>
-    </>
+        <li className="nav-item" id="3" onClick={menuAction}>
+          <a href="/">
+          <i className="far fa-address-card"></i>
+            <span> About Me</span>
+           </a>
+        </li>
+        <li className="nav-item" id="4" onClick={menuAction}>
+          <a href="/">
+          <i className="far fa-envelope-open"></i>
+            <span> Contact</span>
+           </a>
+        </li>
+      </ul>
+    </nav>
   );
 }
 export default NavBar;

@@ -1,62 +1,7 @@
-.home{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to right, #e0eafc, #cfdef3);
-    text-align: center;
-    font-family: 'Lato', sans-serif;
+ .home-page {
+     height: 80vh;
+     display: flex;
      flex-direction: column;
-    justify-content: center;
-    display: flex;
-    color: rgb(48, 50, 70);
-    align-items: center;
-}
-
-.home h1{
-    font-size: 8vh;
-    font-weight: 700;
-}
-
-.home h2 {
-    font-size: 3.2vh; 
-    color: rgba(37, 40, 66, 0.651);
-}
-
-.home .hover{
-    font-size: 3vh;
-    font-weight: 600;
-
-}
-.home .description{
-    font-family: 'Raleway', sans-serif;
-
-    font-size: 3.2vh; 
-    color: rgb(114, 114, 114);
-    font-weight: 300;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-
-}
-
-  .btn_know_more{
-    background: linear-gradient(to right, rgb(42, 56, 138), rgb(45, 77, 145));;
-    font-size: 2.8vh;
-    font-weight: 700;
-    width: 24vh;
-    height: 8vh;
-    color: white;
-    border-radius: 290486px;
-    border: none;
-    outline: 0;
-    cursor: pointer;
-    transition: all .8s ease;
-    margin-top: 3vh;
-} 
-
-.home img {
-    border-radius: 10%;
-}
-
-.btn_know_more:hover {
-    background: linear-gradient(to right, rgb(48, 63, 146), rgb(40, 68, 129));;
-
-}
+     justify-content: center;
+     align-items: center;
+ }

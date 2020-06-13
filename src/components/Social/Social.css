@@ -2,33 +2,36 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: center;
-    padding-top: 8vh;
-    padding-right: 8px;
+    align-content: center; 
+    margin: 0.1em;
     text-justify: center;
 }
 
 .social-media a {
+    font-size: 4vh;
     text-decoration: none;
-    color: #1A2947;
+    color: #15a55d;
     transition: all .8s ease;
 }
 
 .social-media ul li {
-    width: 3vh;
-    height: 3vh;
+    width: 6vh;
+    height: 6vh;
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    font-size: 2.8vh;
-    background-color: rgb(231, 225, 225);
+     background-color: #d5e9df;
     border-radius: 100%;
-    margin-left: 8px;
-    padding: 8px;
-    transition: all .8s;
+     transition: all .8s;
+     padding: 4px;
+     margin: 6px;
 }
 
 .social-media ul li:hover {
-    background-color: #8ba9c9; 
+    background-color: #c7fac7; 
+    color: white;
 }
 
  
