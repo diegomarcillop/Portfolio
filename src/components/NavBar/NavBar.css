@@ -1,10 +1,8 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 .navbar {
-    font-family: 'Lato', sans-serif;
+    background-color: rgba(235, 230, 230, 0.322);
+    height: 17vh;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 300;
     width: 100%;
     position: relative;
     top: 0;
@@ -16,6 +14,23 @@
     transition: left .8s cubic-bezier(1, 0, 0, 1);
     padding: 14px;
     z-index: 1000;
+ 
+}
+
+body.dark .navbar{
+    background-color: rgb(25, 28, 37);
+}
+
+body.dark .nav-list li{
+    color: white;
+}
+
+.navbar-fixed {
+    position: fixed;
+    z-index:1000;
+	top:0;
+	max-width:1000px;
+	width:100%;
 }
 
 .nav-list {
@@ -24,32 +39,30 @@
     justify-content: center;
 }
 
-.nav-list li{
-    display: inline-block;
-    margin: 0px 20px 4px 0px;
-
-}
-
 .nav-list li:last-of-type{
     margin-right: 0px;
 }
 
-.nav-list a{ 
+.nav-list li{ 
+    cursor: pointer;
      text-decoration: none;
     display: inline-block;
-    color: rgb(34, 34, 34); 
+    color: rgb(39, 39, 39); 
     font-size: 2.6vh; 
-     font-weight: 600;  
-    transition: all .1s;
+    margin: 0px 20px 4px 0px;
+
+     transition: all .1s;
     cursor: pointer;
 }
+
+ 
 
   .nav-item::after {
     content: '';
     display: block; 
     width: 0;
-    height: 3px;
-    background: #4fc087;
+    height: 4.4px;
+    background: linear-gradient(rgb(20, 189, 105), rgb(74, 197, 121));
     transition: width .1s;
 }
  

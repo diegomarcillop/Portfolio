@@ -8,7 +8,7 @@ function Skill({progress, title}){
             <h2>{title}</h2>
            <div className="progress">
                <div className="progress-done" style={{ 
-                   background: "linear-gradient(to right, #606c88, #3f4c6b) " ,
+                   background: "linear-gradient(to right, #338b6e, #227e6a)" ,
                    fontFamily: "Lato, sans-serif" ,
                    fontSize: "2.0vh",
                    borderRadius: '20px',

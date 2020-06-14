@@ -3,7 +3,7 @@ import Social from "../Social/Social";
 
 export default function Profile() {
   return (
-    <div style={style.content}>
+    <div style={style.content} id="home">
       <img
         src="img/profile_2.jpg"
         alt="profile"
@@ -30,19 +30,19 @@ const style = {
     width: "40vh",
     height: "40vh",
     borderRadius: "100%",
-    border: "4px solid #4fc087",
+    border: "4px solid rgb(20, 189, 105)",
   },
   title: {
-    fontFamily: "'Lato', sans-serif",
-    fontSize: "4.4vh",
-    color: "rgb(46, 46, 46)",
-    paddingTop: "10px",
+    fontFamily: "'Fredoka One', cursive",
+    fontSize: "4.4vh", 
+     paddingTop: "10px",
+     fontWeight: '300'
+
   },
   text: {
-    fontFamily: "'Lato', sans-serif",
+    fontFamily: "'Open Sans', sans-serif",
     fontSize: "3vh",
     fontStyle: "italic",
-    paddingBottom: "6px",
-    color: "rgb(46, 46, 46)",
+    paddingBottom: "6px", 
   },
 };

@@ -1,54 +1,57 @@
-
-.skills{
-    display: flex; 
-    justify-content: center; 
+.skills {
+    display: flex;
+    justify-content: center;
     align-content: center;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
-     width: 100%;
-    height: 100vh; 
+    width: 100%;
+    height: 90vh;
     margin: 0px 6vh 0px 6vh;
 }
 
-.skills h1{
-    font-family: 'Lato', sans-serif;
+.skills h1 {
+    font-family: 'Fredoka One', cursive;
     font-size: 4.5vh;
-    font-weight: 900;
+    font-weight: 300;
 }
-.group-skills{
+
+.group-skills {
     display: flex;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-     width: 80%;
+    width: 80%;
 }
 
-.skills-1 { 
+.skills-1 {
     width: 100%;
 }
- 
 
-.progress{   
+.progress {
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    height: 13px;
-    width: auto; 
+    height: 16px;
+    width: auto;
     box-shadow: -2px 2px 15px 6px rgba(61, 61, 61, 0.26);
 }
 
- 
-
-.progress-content{
+.progress-content {
     display: flex;
     flex-direction: column;
     margin: 20px;
+    background-color: linear-gradient(to right, #338b6e, #227e6a);
 }
 
-.progress-content h2{
+.progress-content h2 {
     padding-top: 8px;
     margin-left: -1px;
     padding-bottom: 8px;
-    font-family: 'Lato', sans-serif;
-    color: rgb(18, 22, 34);
-    font-size: 2.4vh; 
+    font-family: 'Fredoka One', cursive;
+    font-weight: 300;
+    color: rgb(39, 39, 39);
+    font-size: 2.4vh;
+}
+
+body.dark .progress-content h2 {
+    color: rgb(255, 255, 255);
 }

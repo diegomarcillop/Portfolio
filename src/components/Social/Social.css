@@ -10,7 +10,7 @@
 .social-media a {
     font-size: 4vh;
     text-decoration: none;
-    color: #15a55d;
+    color: #278b38;
     transition: all .8s ease;
 }
 
@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-     background-color: #d5e9df;
+     background-color: #ebebeb;
     border-radius: 100%;
      transition: all .8s;
      padding: 4px;
@@ -30,8 +30,8 @@
 }
 
 .social-media ul li:hover {
-    background-color: #c7fac7; 
+    background-color: #ebf1eb; 
     color: white;
-}
+ }
 
  
